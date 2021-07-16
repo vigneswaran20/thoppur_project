@@ -6,6 +6,9 @@ salem_accidents <- excel_sheets("E:\\CopyOFnew.xlsx") %>% map_df(~read_xlsx("E:\
 skimr::skim(salem_accidents)
 str(salem_accidents)
 
+library(extrafont)
+loadfonts(device = "win")
+
 
 '----------------------------------------------------------------------------------------------'
 library(tidyverse)
